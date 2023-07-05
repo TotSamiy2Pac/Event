@@ -1,0 +1,36 @@
+@media (max-width: 1400px){
+    .container {
+        max-width: 1800px;
+    }
+}
+@media (max-width: 1200px){
+    .main-item {
+        min-height: 500px;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .nav {
+        display: none;
+    }
+    .col-4 {
+        width: 50%;
+    }
+
+    .one .col-4:last-child .main-item {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .main-item {
+        min-height: 400px;
+    }
+    .col-4 {
+        width: 100%;
+    }
+    .one .col-4:not(:first-child) .main-item {
+        margin-top: 20px;
+    }
+}
