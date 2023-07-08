@@ -5,8 +5,13 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+footer {
+    padding: 40px 0;
+}
+
 a {
     text-decoration: none;
+    color: #000;
 }
 
 h3 {
@@ -17,11 +22,27 @@ h3 {
     text-transform: uppercase;
 }
 
-p {
+h4 {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 135%;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.one p {
     text-align: center;
     font-size: 14px;
     font-weight: 400;
     line-height: 135%;
+}
+
+.hero-container {
+    max-width: 95%;
+    margin: 0 auto;
 }
 
 .burger-btn {
@@ -36,6 +57,7 @@ p {
 
 .gold-border {
     border: 2px solid var(--accent, #D1A954);
+    color: #D1A954;
 }
 
 .nav {
@@ -52,7 +74,10 @@ p {
 .main-item {
     min-height: 650px;
     position: relative;
+    overflow: hidden;
 }
+
+
 
 .main-item-1 {
     background: url(../assets/main-item-1.png) no-repeat center/cover;
@@ -67,17 +92,241 @@ p {
 }
 
 .content-main-item {
+    position: absolute;
     color: #fff;
     background: rgba(209, 169, 84, 0.90);
     position: absolute;
-    bottom: 0;
+    bottom: -200px;
     left: 0;
     right: 0;
     padding: 20px 15px;
-    min-height: 166px;
+    min-height: 29.66%;
+    transition: 0.6s;
+}
+
+.main-item:hover .content-main-item {
+    bottom: 0;
 }
 
 .border-cont-m-t {
     width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.50);
 }
+
+.nav-item {
+    transition: 0.6s;
+}
+
+.nav-item:hover {
+    transform: translateY(-5px);
+}
+
+.o-restoran {
+    padding: 120px 0 60px;
+}
+
+.margin-bt {
+    margin-bottom: -300px;
+}
+
+.summer-castle {
+    font-size: 9px;
+    font-weight: 300;
+    letter-spacing: 0.27px;
+    text-transform: uppercase;
+}
+
+/* =========================>SECTION ABOUT============================= */
+
+.about {
+    background: #F9F7F7;
+    padding-top: 329px;
+}
+
+.big_logo {
+    width: 100%;
+}
+
+/* .parent { */
+    /* display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 39px;
+    }
+    
+    .div1 { grid-area: 1 / 2 / 3 / 4; }
+    .div2 { grid-area: 3 / 1 / 6 / 6; }
+    .div3 { grid-area: 1 / 7 / 4 / 10; }
+    .div4 { grid-area: 1 / 10 / 4 / 13; }
+    .div5 { grid-area: 4 / 7 / 6 / 10; }
+    .div6 { grid-area: 4 / 10 / 6 / 13; } */
+
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 39px;
+        grid-row-gap: 30px;
+        }
+        
+        .div1 { grid-area: 1 / 2 / 3 / 5; }
+        .div2 { grid-area: 3 / 1 / 6 / 6; }
+        .div3 { grid-area: 1 / 7 / 3 / 10; }
+        .div4 { grid-area: 1 / 10 / 3 / 13; }
+        .div5 { grid-area: 3 / 7 / 6 / 10; }
+        .div6 { grid-area: 3 / 10 / 6 / 13; }
+
+
+/* ============================>Section Gallarey========================================= */
+
+
+.gallarey {
+    padding: 120px 0 150px;
+}
+
+    .parent2 {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(15, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        }
+        
+        .div2-1 { grid-area: 1 / 1 / 6 / 4; }
+        .div2-2 { grid-area: 1 / 4 / 6 / 9; }
+        .div2-3 { grid-area: 1 / 9 / 6 / 13; }
+        .div2-4 { grid-area: 6 / 1 / 16 / 8; }
+        .div2-5 { grid-area: 6 / 8 / 11 / 13; }
+        .div2-6 { grid-area: 11 / 8 / 16 / 13; }
+
+.parent2 img{
+    object-fit: contain;
+    width: 100%;
+}
+
+.div2-1 img {
+    object-fit: none;
+    width: unset;
+}
+
+
+/* ================================>SECTION DOWNLOAD========================================== */
+
+.section-download {
+    padding: 120px 0;
+    background : url(../assets/bg-down.png) no-repeat center/cover 
+}
+
+.section-download h3 {
+    color: #fff;
+}
+
+
+.download {
+    padding: 23px 58px;
+    border: none;
+    background-color: #fff;
+}
+
+.gap70 {
+    gap: 70px;
+}
+
+.gap90 {
+    gap: 90px;
+}
+
+/* ================================>SECTION CONTACTS ============================ */
+
+.contacts {
+    padding: 120px 0;
+}
+
+.contacts input {
+    height: 50px;
+    border: none;
+    padding: 17px 0;
+    border-bottom: 0.5px solid #D0D0D0;
+}
+
+.contacts textarea {
+    border: 0.5px solid #D0D0D0;
+    resize: none;
+    padding: 15px 20px;
+}
+
+
+input,textarea:focus {
+    outline: none;
+}
+
+.gap35 {
+    gap: 35px;
+}
+
+
+.gap30 {
+    gap: 30px;
+}
+
+.send-btn {
+    max-width: 182px;
+    padding: 12px 35px;
+    border: none;
+    background: var(--accent, #D1A954);
+    color: #FFF;
+    font-weight: 300;
+    line-height: 135%;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.contacts h3 {
+    text-align: left;
+    max-width: 529px;
+    font-weight: 300;
+    line-height: 145%;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+.text-contacts {
+    padding: 40px 0 60px;
+    max-width: 540px;
+    color: var(--gray, #616161);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 135%;
+}
+
+
+
+.address {
+    max-width: 237px;
+    color: #000;
+    text-decoration-line: underline;
+}
+
+/* =================================>SECTION INSTAGRAM =============================== */
+
+.instagram {
+    padding-top: 120px;
+    background: #F9F7F7;
+}
+
+.pb-90 {
+    padding-bottom: 90px;
+}
+
+/* .insta-photo {
+    width: 16.666%;
+} */
+
+.container-insta-photo {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* ============================>FOOTER============================ */
+
